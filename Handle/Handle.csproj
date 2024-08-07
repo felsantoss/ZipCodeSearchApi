@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Service\Service.csproj" />
+    <ProjectReference Include="..\ZipCodeSearchApi\Application.csproj" />
   </ItemGroup>
 
 </Project>
