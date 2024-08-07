@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "ZipCodeSearchApi\Application.csproj", "{5304ED87-7E76-45F2-BF86-7B9DB3906913}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "ZipCodeSearchApi\Application.csproj", "{5304ED87-7E76-45F2-BF86-7B9DB3906913}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Application", "0 - Application", "{FEDFE520-C30F-483C-A21D-553F63E57E58}"
 EndProject
@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{D04F22CF-B9E4-479C-AE7B-C4042FF7F4AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{5DDC3EF2-FAD8-418C-8366-707356F0F6C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{5DDC3EF2-FAD8-418C-8366-707356F0F6C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Models", "2 - Models", "{17F656C2-151C-4625-BC39-BFC6C13865F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{78E8D19E-67FC-4ECA-BAFA-2FAC805A1CF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{78E8D19E-67FC-4ECA-BAFA-2FAC805A1CF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

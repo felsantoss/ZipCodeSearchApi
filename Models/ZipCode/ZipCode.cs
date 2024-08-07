@@ -5,21 +5,20 @@ namespace Models.ZipCode
 	public class ZipCode
 	{
 		[JsonPropertyName("cep")]
-		public string Cep { get; set; } = string.Empty;
+		public string? Cep { get; set; } 
 
 		[JsonPropertyName("state")]
-		public string State { get; set; } = string.Empty;
+		public string? State { get; set; } 
 
 		[JsonPropertyName("city")]
-		public string City { get; set; } = string.Empty;
+		public string? City { get; set; } 
 
 		[JsonPropertyName("neighborhood")]
-		public string Neighborhood { get; set; } = string.Empty;
+		public string? Neighborhood { get; set; }
 
 		[JsonPropertyName("street")]
-		public string Street { get; set; } = string.Empty;
-
+		public string? Street { get; set; } 
 		[JsonPropertyName("service")]
-		public string Service { get; set; } = string.Empty;
+		public string? Service { get; set; } 
 	}
 }
