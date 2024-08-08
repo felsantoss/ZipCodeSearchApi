@@ -5,6 +5,6 @@ namespace Service.Interface
 {
 	public interface IZipCodeService
 	{
-		Task<GenericResponse<ZipCode>> GetAddressByZipCode(string zipCode);
+		Task<GenericResponse<ZipCodeResponse>> GetAddress(string zipCode);
 	}
 }

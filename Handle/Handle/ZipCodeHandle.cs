@@ -9,11 +9,11 @@ namespace Handle.Handle
 {
 	public class ZipCodeHandle : IZipCodeService
 	{
-		public async Task<GenericResponse<ZipCode>> GetAddressByZipCode(string zipCode)
+		public async Task<GenericResponse<ZipCodeResponse>> GetAddress(string zipCode)
 		{
 			var request = new HttpRequestMessage(HttpMethod.Get, $"https://brasilapi.com.br/api/cep/v1/{zipCode}");
 
-			var response = new GenericResponse<ZipCode>();
+			var response = new GenericResponse<ZipCodeResponse>();
 
 			using(var client = new HttpClient())
 			{
@@ -21,7 +21,7 @@ namespace Handle.Handle
 
 				var contentResponse = await responseZipCode.Content.ReadAsStreamAsync();
 
-				var objectResponse = JsonSerializer.Deserialize<ZipCode>(contentResponse);
+				var objectResponse = JsonSerializer.Deserialize<ZipCodeResponse>(contentResponse);
 
 				if (responseZipCode.IsSuccessStatusCode)
 				{
