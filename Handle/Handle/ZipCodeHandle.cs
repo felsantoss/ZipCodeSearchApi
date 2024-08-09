@@ -15,7 +15,7 @@ namespace Handle.Handle
 
 			var response = new GenericResponse<ZipCodeResponse>();
 
-			using(var client = new HttpClient())
+			using (var client = new HttpClient())
 			{
 				var responseZipCode = await client.SendAsync(request);
 
