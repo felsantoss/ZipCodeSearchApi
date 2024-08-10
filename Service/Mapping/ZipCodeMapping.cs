@@ -9,7 +9,7 @@ namespace Service.Mapping
 		public ZipCodeMapping()
 		{
 			CreateMap(typeof(GenericResponse<>), typeof(GenericResponse<>));
-			CreateMap<ZipCodeResponse, ZipCode>();
+			CreateMap<ZipCode, ZipCodeResponse>();
 		}
 	}
 }
