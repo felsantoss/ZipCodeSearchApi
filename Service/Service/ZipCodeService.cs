@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Models.ZipCode;
 using Service.Dtos;
 using Service.Interface;
 
@@ -8,17 +7,17 @@ namespace Service.Service
 	public class ZipCodeService : IZipCodeService
 	{
 		private readonly IMapper _mapper;
-		private readonly IZipCodeService _zipCodeService;
+		private readonly IZipCodeRepository _zipCodeRepository;
 
-		public ZipCodeService(IMapper mapper, IZipCodeService zipCodeService)
+		public ZipCodeService(IMapper mapper, IZipCodeRepository zipCodeRepository)
 		{
 			_mapper = mapper;
-			_zipCodeService = zipCodeService;
+			_zipCodeRepository = zipCodeRepository;
 		}
 
 		public async Task<GenericResponse<ZipCodeResponse>> GetAddress(string zipCode)
 		{
-			var address = await _zipCodeService.GetAddress(zipCode);
+			var address = await _zipCodeRepository.GetAddressByZipCode(zipCode);
 
 			return _mapper.Map<GenericResponse<ZipCodeResponse>>(address);
 		}

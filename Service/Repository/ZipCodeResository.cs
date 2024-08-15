@@ -1,13 +1,13 @@
-﻿using Handle.NewFolder;
-using Service.Dtos;
+﻿using Service.Dtos;
+using Service.Interface;
 using System.Dynamic;
 using System.Text.Json;
 
-namespace Handle.Handle
+namespace Service.Repository
 {
-	public class ZipCodeHandle : IZipCodeHandle
+	public class ZipCodeResository : IZipCodeRepository
 	{
-		public async Task<GenericResponse<ZipCodeResponse>> GetAddress(string zipCode)
+		public async Task<GenericResponse<ZipCodeResponse>> GetAddressByZipCode(string zipCode)
 		{
 			var request = new HttpRequestMessage(HttpMethod.Get, $"https://brasilapi.com.br/api/cep/v1/{zipCode}");
 

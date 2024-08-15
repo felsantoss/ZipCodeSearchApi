@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IZipCodeService, ZipCodeService>();
+builder.Services.AddTransient<IZipCodeService, ZipCodeService>();
 
 builder.Services.AddAutoMapper(typeof(ZipCodeMapping));
 
